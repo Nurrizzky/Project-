@@ -421,8 +421,9 @@
     <div class="tes-aja">
         <p>tes pull request</p>
     </div>
-
-    
+    <div class="tes2">
+        <p>tes2</p>
+    </div>
     
     
     {{-- nur rizki selesain yang ini --}} 
