@@ -418,7 +418,9 @@
         </div>
     </section>
 
-    
+    <div class="tes-2">
+        <p>tessss</p>
+    </div>
     
     
     {{-- nur rizki selesain yang ini --}} 
