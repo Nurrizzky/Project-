@@ -300,6 +300,197 @@
             </div>
         </div>
     </section>
+<div class="w-full flex justify-center items-center bg-white">
+    <div class="w-max flex gap-[1px] items-center justify-evenly p-5 my-3 overflow-x-auto">
+        <a href="#" class="h-[60%] px-5 py-2 m-2 border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner  duration-300">
+                kategori
+        </a>
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                kategori
+        </a>
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                kategori
+        </a>
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                kategori
+        </a>
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                kategori
+        </a>
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                kategori
+        </a>
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                kategori
+        </a>
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                kategori
+        </a>
+    </div>
+</div>
+
+<div class="w-full flex justify-center items-center bg-white rounded">
+    <div class="relative w-[50%] h-[500px] bg-cover bg-no-repeat rounded-xl max-sm:w-[90%]"
+        style="background-image: url('https://ppdb.smkwikrama.sch.id/assets/landing%20page/images/Gedung.jpg');">
+        <div class="absolute inset-0 flex flex-col justify-center items-start w-[80%] m-auto text-left backdrop-blur-sm h-fit rounded-md p-3">
+            <h6 class="text-white text-4xl font-bold m-5 max-sm:text-sm ">kategori</h6>
+            <h1 class="text-white text-xl font-light m-5 max-sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed debitis suscipit a assumenda nemo excepturi nobis, deserunt et itaque dolores?</h1>
+            <a href="" class="bg-white p-3 rounded m-5 md:text-sm max-sm:m-auto">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Trending Products -->
+
+    <div class="bg-white">
+        <div class="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
+          <div class="flex items-center justify-between px-4 sm:px-6 lg:px-0">
+            <h2 class="text-2xl font-bold tracking-tight text-gray-900">Trending products</h2>
+            <a href="#" class="hidden text-sm font-semibold text-blue-600 hover:text-cyan-500 sm:block">
+              Search more
+              <span aria-hidden="true"> &rarr;</span>
+            </a>
+          </div>
+      
+          <div class="relative mt-8">
+            <div class="relative -mb-6 w-full overflow-x-auto pb-6">
+              <ul role="list" class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0">
+                <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                  <div class="group relative">
+                    <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+                      <img src="https://m.media-amazon.com/images/I/61bG3pY7k-L.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Prime drink
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-gray-900">Rp 5.000</p>
+                    </div>
+                  </div>
+      
+                  <h4 class="sr-only">Available colors</h4>
+                  <ul role="list" class="mt-auto flex items-center justify-center space-x-3 pt-6">
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #111827">
+                      <span class="sr-only">Black</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #fde68a">
+                      <span class="sr-only">Brass</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #e5e7eb">
+                      <span class="sr-only">Chrome</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                  <div class="group relative">
+                    <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+                      <img src="https://m.media-amazon.com/images/I/61bG3pY7k-L.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Prime drink
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-gray-900">Rp 5.000</p>
+                    </div>
+                  </div>
+      
+                  <h4 class="sr-only">Available colors</h4>
+                  <ul role="list" class="mt-auto flex items-center justify-center space-x-3 pt-6">
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #111827">
+                      <span class="sr-only">Black</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #fde68a">
+                      <span class="sr-only">Brass</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #e5e7eb">
+                      <span class="sr-only">Chrome</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                  <div class="group relative">
+                    <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+                      <img src="https://m.media-amazon.com/images/I/61bG3pY7k-L.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Prime drink
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-gray-900">Rp 5.000</p>
+                    </div>
+                  </div>
+      
+                  <h4 class="sr-only">Available colors</h4>
+                  <ul role="list" class="mt-auto flex items-center justify-center space-x-3 pt-6">
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #111827">
+                      <span class="sr-only">Black</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #fde68a">
+                      <span class="sr-only">Brass</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #e5e7eb">
+                      <span class="sr-only">Chrome</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                  <div class="group relative">
+                    <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+                      <img src="https://m.media-amazon.com/images/I/61bG3pY7k-L.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Prime drink
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-gray-900">Rp 5.000</p>
+                    </div>
+                  </div>
+      
+                  <h4 class="sr-only">Available colors</h4>
+                  <ul role="list" class="mt-auto flex items-center justify-center space-x-3 pt-6">
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #111827">
+                      <span class="sr-only">Black</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #fde68a">
+                      <span class="sr-only">Brass</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #e5e7eb">
+                      <span class="sr-only">Chrome</span>
+                    </li>
+                  </ul>
+                </li>
+      
+                <!-- More products... -->
+              </ul>
+            </div>
+          </div>
+      
+          <div class="mt-12 flex px-4 sm:hidden">
+            <a href="#" class="text-sm font-semibold text-blue-600 hover:text-cyan-500">
+              Search more
+              <span aria-hidden="true"> &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {{-- **** FOOTER **** --}}
     <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
@@ -417,12 +608,9 @@
         </div>
     </section>
 
-    <div class="tes-aja">
-        <p>tes pull request</p>
+    <div class="tes-2">
+        <p>tessss</p>
     </div>
-
-    
-    
     
     {{-- nur rizki selesain yang ini --}} 
 
