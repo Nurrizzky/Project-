@@ -14,6 +14,9 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                boxShadow: {
+                    'inner-2': 'inset 0 4px 6px rgba(0, 0, 0, 0.2)',
+                  }
             },
         },
     },
