@@ -29,8 +29,7 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("You're logged in!") }}
-                </div>
-            </div>
+                </div>~
         </div>
     </div> --}}
 
@@ -55,7 +54,7 @@
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://ppdb.smkwikrama.sch.id/assets/landing%20page/images/Gedung.jpg"
                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                     alt="Random Image 3" />
+                     alt="Random Image 3" />''
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
