@@ -320,29 +320,26 @@
     </section>
 <div class="w-full flex justify-center items-center bg-white">
     <div class="w-max flex gap-[1px] items-center justify-evenly p-5 my-3 overflow-x-auto">
-        <a href="#" class="h-[60%] px-5 py-2 m-2 border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner  duration-300">
-                kategori
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2 border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner  duration-300">
+                Makanan
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
-                kategori
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Minuman
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
-                kategori
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Snack
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
-                kategori
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Paket Hemat
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
-                kategori
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Promo
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
-                kategori
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Roti & Kue
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
-                kategori
-        </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
-                kategori
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Produk Sehat
         </a>
     </div>
 </div>
