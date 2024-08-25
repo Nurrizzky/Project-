@@ -303,35 +303,35 @@
     </section>
 <div class="w-full flex justify-center items-center bg-white">
     <div class="w-max flex gap-[1px] items-center justify-evenly p-5 my-3 overflow-x-auto">
-        <a href="#" class="h-[60%] px-5 py-2 m-2 border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner  duration-300">
+        <a href="#" class="h-[60%] px-5 py-2 m-2 border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner  duration-300">
                 kategori
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
                 kategori
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
                 kategori
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
                 kategori
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
                 kategori
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
                 kategori
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
                 kategori
         </a>
-        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+        <a href="#" class="h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
                 kategori
         </a>
     </div>
 </div>
 
 <div class="w-full flex justify-center items-center bg-white rounded">
-    <div class="relative w-[50%] h-[500px] bg-cover bg-no-repeat rounded-xl max-sm:w-[90%]"
+    <div class="relative w-[50%] h-[500px] bg-cover bg-no-repeat rounded-xl max-sm:w-[90%] shadow-2xl"
         style="background-image: url('https://ppdb.smkwikrama.sch.id/assets/landing%20page/images/Gedung.jpg');">
         <div class="absolute inset-0 flex flex-col justify-center items-start w-[80%] m-auto text-left backdrop-blur-sm h-fit rounded-md p-3">
             <h6 class="text-white text-4xl font-bold m-5 max-sm:text-sm ">kategori</h6>
