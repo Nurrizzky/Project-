@@ -103,7 +103,7 @@
                     <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">Sign up to Celebration</h2>
                     <p class="mt-2 text-base text-gray-600">Already have an account? <a href="{{  route('login') }}" title="" class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Login</a></p>
     
-                    <form method="POST" action="{{ route('register') }}" class="mt-8">
+                    <form method="POST" action="{{ route('register') }}" class="mt-8" id="register-form">
                         @csrf
                     
                         <div class="space-y-5">
@@ -164,7 +164,7 @@
                             </div>
                     
                             <div>
-                                <x-primary-button type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 border border-transparent rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 focus:outline-none hover:opacity-80 focus:opacity-80">
+                                <x-primary-button id="register-button" type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 border border-transparent rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 focus:outline-none hover:opacity-80 focus:opacity-80">
                                     {{ __('Register') }}
                                 </x-primary-button>
                                 
@@ -209,5 +209,25 @@
             </div>
         </div>
     </section>
-    
+    <div id="loadingOverlay" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <lottie-player src="https://lottie.host/a5124a93-c5e5-4943-b98f-6bf8932db414/1vh2XfK8wc.json" 
+            background="##FFFFFF" 
+            speed="1" 
+            style="width: 300px; height: 300px;" 
+            loop 
+            autoplay>
+        </lottie-player>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        document.getElementById('register-form').addEventListener('submit', function () {
+            var button = document.getElementById('register-button');
+            var overlay = document.getElementById('loadingOverlay');
+            setTimeout(() => {
+                button.disabled = true;
+                
+            }, 10000);
+            overlay.classList.remove('hidden');
+        });
+    </script>
 </x-guest-layout>
