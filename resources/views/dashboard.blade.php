@@ -5,42 +5,46 @@
         </h2> --}}
         @if(!auth()->user())
 
-    <div class="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-        <div class="flex items-center justify-center w-12 bg-yellow-400">
-            <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z" />
-            </svg>
-        </div>
+        <div class="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-12 bg-yellow-400">
+                <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z" />
+                </svg>
+            </div>
 
-        <div class="px-4 py-2 -mx-3">
-            <div class="mx-3">
-                <span class="font-semibold text-yellow-400 dark:text-yellow-300">Warning</span>
-                <p class="text-sm text-gray-600 dark:text-gray-200">
-                    Anda Belum login Silahkan Login Disini <a class="text-yellow-300" href="/login">Login</a>
-                </p>
+            <div class="px-4 py-2 -mx-3">
+                <div class="mx-3">
+                    <span class="font-semibold text-yellow-400 dark:text-yellow-300">Warning</span>
+                    <p class="text-sm text-gray-600 dark:text-gray-200">
+                        Anda Belum login Silahkan Login Disini <a class="text-yellow-300" href="/login">Login</a>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    @endif
-    </x-slot>
 
-    {{-- <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>~
+        @elseif(auth()->user())
+        <div class="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-12 bg-emerald-500">
+                <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z" />
+                </svg>
+            </div>
+        
+            <div class="px-4 py-2 -mx-3">
+                <div class="mx-3">
+                    <span class="font-semibold text-emerald-500 dark:text-emerald-400">Success</span>
+                    <p class="text-sm text-gray-600 dark:text-gray-200">Selamat Datang {{ auth()->user()->name }}</p>
+                </div>
+            </div>
         </div>
-    </div> --}}
-
-    
-
-    <div id="default-carousel" class="relative h-56 overflow-hidden md:h-96" data-carousel="static">
+        @endif
+        
+    <div id="default-carousel" class="relative h-56 overflow-hidden md:h-96 mt-6" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="relative h-full overflow-hidden rounded-lg">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://ppdb.smkwikrama.sch.id/assets/landing%20page/images/Gedung.jpg"
+                <img src="{{ asset('/img/dump-img.jpg') }}"
                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                      alt="Random Image 1" />
             </div>
@@ -95,6 +99,20 @@
             </span>
         </button>
     </div>
+
+    </x-slot>
+
+    {{-- <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900 dark:text-gray-100">
+                    {{ __("You're logged in!") }}
+                </div>~
+        </div>
+    </div> --}}
+
+    
+
     <section class="py-12 bg-white sm:py-16 lg:py-20">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="max-w-md mx-auto text-center">
@@ -105,7 +123,7 @@
             <div class="grid grid-cols-2 gap-6 mt-10 lg:mt-16 lg:gap-4 lg:grid-cols-4">
                 <div class="relative group">
                     <div class="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-1.png" alt="" />
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
                     </div>
                     <div class="absolute left-3 top-3">
                         <p class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-gray-900 uppercase bg-white rounded-full">New</p>
@@ -155,7 +173,7 @@
     
                 <div class="relative group">
                     <div class="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-2.png" alt="" />
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
                     </div>
                     <div class="flex items-start justify-between mt-4 space-x-4">
                         <div>
@@ -202,7 +220,7 @@
     
                 <div class="relative group">
                     <div class="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-3.png" alt="" />
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
                     </div>
                     <div class="absolute left-3 top-3">
                         <p class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-white uppercase bg-gray-900 rounded-full">Sale</p>
@@ -253,7 +271,7 @@
     
                 <div class="relative group">
                     <div class="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-4.png" alt="" />
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
                     </div>
                     <div class="flex items-start justify-between mt-4 space-x-4">
                         <div>
@@ -608,9 +626,6 @@
         </div>
     </section>
 
-    <div class="tes-2">
-        <p>tessss</p>
-    </div>
     
     {{-- nur rizki selesain yang ini --}} 
 
