@@ -1,4 +1,5 @@
 <x-app-layout>
+    
     <x-slot name="header">
         {{-- <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Dashboard') }}
@@ -41,7 +42,7 @@
         <div class="relative h-full overflow-hidden rounded-lg">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{{ asset('/img/dump-img.jpg') }}"
+                <img src="https://smkwikrama.sch.id/storage/1704346349-slider$slider.jpg"
                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                      alt="Random Image 1" />
             </div>
@@ -53,7 +54,7 @@
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://ppdb.smkwikrama.sch.id/assets/landing%20page/images/Gedung.jpg"
+                <img src="https://smkwikrama.sch.id/storage/1703646025-slider$slider.JPG"
                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                      alt="Random Image 3" />''
             </div>
@@ -822,6 +823,8 @@
         </div>
     </section>
 
+
+   
     
     {{-- nur rizki selesain yang ini --}} 
 
