@@ -83,11 +83,11 @@
     <div class="w-full">
         <div class="flex justify-start mx-auto items-center max-w-4xl px-10">
             <div class="flex gap-7 w-full items-center justify-start max-sm:overflow-x-auto max-sm:p-2 mt-1 max-lg:justify-center max-sm:justify-start">
-                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-60 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Dashboard</button>
-                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-60 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Cart</button>
-                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-60 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Notification</button>
-                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-60 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Notification</button>
-                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-60 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Notification</button>
+                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-70 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Dashboard</button>
+                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-70 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Cart</button>
+                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-70 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Notification</button>
+                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-70 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Notification</button>
+                <button class="text-sm hover:bg-sky-300 hover:bg-opacity-35 text-black text-opacity-70 hover:text-opacity-100 rounded-t-md py-1 px-2 duration-200 shadow-sm p-0 max-sm:border-r max-sm:border-b-0 max-sm:border-gray-200 max-sm:rounded-e-none">Notification</button>
             </div>
         </div>
     </div>
