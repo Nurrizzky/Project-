@@ -1,47 +1,48 @@
 <x-app-layout>
+    
     <x-slot name="header">
         {{-- <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Dashboard') }}
         </h2> --}}
         @if(!auth()->user())
 
-    <div class="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-        <div class="flex items-center justify-center w-12 bg-yellow-400">
-            <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z" />
-            </svg>
-        </div>
-
-        <div class="px-4 py-2 -mx-3">
-            <div class="mx-3">
-                <span class="font-semibold text-yellow-400 dark:text-yellow-300">Warning</span>
-                <p class="text-sm text-gray-600 dark:text-gray-200">
-                    Anda Belum login Silahkan Login Disini <a class="text-yellow-300" href="/login">Login</a>
-                </p>
+        <div class="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-12 bg-yellow-400">
+                <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z" />
+                </svg>
             </div>
-        </div>
-    </div>
-    @endif
-    </x-slot>
 
-    {{-- <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
+            <div class="px-4 py-2 -mx-3">
+                <div class="mx-3">
+                    <span class="font-semibold text-yellow-400 dark:text-yellow-300">Warning</span>
+                    <p class="text-sm text-gray-600 dark:text-gray-200">
+                        Anda Belum login Silahkan Login Disini <a class="text-yellow-300" href="/login">Login</a>
+                    </p>
                 </div>
             </div>
         </div>
-    </div> --}}
 
-    
+       
+        @endif
+        @if (session('success'))
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Login Berhasil',
+                    text: 'Selamat Datang {{ auth()->user()->name }}',
+                    confirmButtonText: 'Ok'
+                });
+            </script>
+        @endif
 
-    <div id="default-carousel" class="relative h-56 overflow-hidden md:h-96" data-carousel="static">
+    <div id="default-carousel" class="relative h-56 overflow-hidden md:h-96 mt-6" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="relative h-full overflow-hidden rounded-lg">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://ppdb.smkwikrama.sch.id/assets/landing%20page/images/Gedung.jpg"
+                <img src="https://smkwikrama.sch.id/storage/1704346349-slider$slider.jpg"
                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                      alt="Random Image 1" />
             </div>
@@ -53,9 +54,9 @@
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://ppdb.smkwikrama.sch.id/assets/landing%20page/images/Gedung.jpg"
+                <img src="https://smkwikrama.sch.id/storage/1703646025-slider$slider.JPG"
                      class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                     alt="Random Image 3" />
+                     alt="Random Image 3" />''
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -96,6 +97,20 @@
             </span>
         </button>
     </div>
+
+    </x-slot>
+
+    {{-- <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900 dark:text-gray-100">
+                    {{ __("You're logged in!") }}
+                </div>~
+        </div>
+    </div> --}}
+
+    
+
     <section class="py-12 bg-white sm:py-16 lg:py-20">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="max-w-md mx-auto text-center">
@@ -106,7 +121,7 @@
             <div class="grid grid-cols-2 gap-6 mt-10 lg:mt-16 lg:gap-4 lg:grid-cols-4">
                 <div class="relative group">
                     <div class="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-1.png" alt="" />
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
                     </div>
                     <div class="absolute left-3 top-3">
                         <p class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-gray-900 uppercase bg-white rounded-full">New</p>
@@ -153,10 +168,11 @@
                         </div>
                     </div>
                 </div>
+                
     
                 <div class="relative group">
                     <div class="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-2.png" alt="" />
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
                     </div>
                     <div class="flex items-start justify-between mt-4 space-x-4">
                         <div>
@@ -203,7 +219,7 @@
     
                 <div class="relative group">
                     <div class="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-3.png" alt="" />
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
                     </div>
                     <div class="absolute left-3 top-3">
                         <p class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-white uppercase bg-gray-900 rounded-full">Sale</p>
@@ -254,7 +270,208 @@
     
                 <div class="relative group">
                     <div class="overflow-hidden aspect-w-1 aspect-h-1">
-                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-4.png" alt="" />
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
+                    </div>
+                    <div class="flex items-start justify-between mt-4 space-x-4">
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
+                                <a href="#" title="">
+                                    Martino 75 Bluetooth
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                </a>
+                            </h3>
+                            <div class="flex items-center mt-2.5 space-x-px">
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="text-right">
+                            <p class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">$79.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+
+    
+            <div class="grid grid-cols-2 gap-6 mt-10 lg:mt-16 lg:gap-4 lg:grid-cols-4">
+                <div class="relative group">
+                    <div class="overflow-hidden aspect-w-1 aspect-h-1">
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
+                    </div>
+                    <div class="absolute left-3 top-3">
+                        <p class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-gray-900 uppercase bg-white rounded-full">New</p>
+                    </div>
+                    <div class="flex items-start justify-between mt-4 space-x-4">
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
+                                <a href="#" title="">
+                                    Beoplay M5 Bluetooth Speaker
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                </a>
+                            </h3>
+                            <div class="flex items-center mt-2.5 space-x-px">
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="text-right">
+                            <p class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">$99.00</p>
+                        </div>
+                    </div>
+                </div>
+                
+    
+                <div class="relative group">
+                    <div class="overflow-hidden aspect-w-1 aspect-h-1">
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
+                    </div>
+                    <div class="flex items-start justify-between mt-4 space-x-4">
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
+                                <a href="#" title="">
+                                    Apple Smart Watch 6 - Special Edition
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                </a>
+                            </h3>
+                            <div class="flex items-center mt-2.5 space-x-px">
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-yellow-400 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="text-right">
+                            <p class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">$299.00</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="relative group">
+                    <div class="overflow-hidden aspect-w-1 aspect-h-1">
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
+                    </div>
+                    <div class="absolute left-3 top-3">
+                        <p class="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-white uppercase bg-gray-900 rounded-full">Sale</p>
+                    </div>
+                    <div class="flex items-start justify-between mt-4 space-x-4">
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
+                                <a href="#" title="">
+                                    Beylob 90 Speaker
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                </a>
+                            </h3>
+                            <div class="flex items-center mt-2.5 space-x-px">
+                                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg class="w-3 h-3 text-gray-300 sm:w-4 sm:h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="text-right">
+                            <p class="text-xs font-bold text-gray-900 sm:text-sm md:text-base">$49.00</p>
+                            <del class="mt-0.5 text-xs sm:text-sm font-bold text-gray-500"> $99.00 </del>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="relative group">
+                    <div class="overflow-hidden aspect-w-1 aspect-h-1">
+                        <img class="object-cover w-full h-full transition-all duration-300 group-hover:scale-125" src="https://pict.sindonews.net/dyn/600/pena/sindo-article/original/2020/12/17/cireng.jpg" alt="" />
                     </div>
                     <div class="flex items-start justify-between mt-4 space-x-4">
                         <div>
@@ -301,6 +518,194 @@
             </div>
         </div>
     </section>
+<div class="w-full flex justify-center items-center bg-white">
+    <div class="w-max flex gap-[1px] items-center justify-evenly p-5 my-3 overflow-x-auto">
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2 border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner  duration-300">
+                Makanan
+        </a>
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Minuman
+        </a>
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Snack
+        </a>
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Paket Hemat
+        </a>
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Promo
+        </a>
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Roti & Kue
+        </a>
+        <a href="#" class="w-fit text-nowrap h-[60%] px-5 py-2 m-2  border-[1px] border-gray-400 font-bold border-opacity-10 inner-2 shadow-md rounded-2xl bg-gradient-to-br from-sky-100 to-white transform hover:-translate-y-1  hover:shadow-inner duration-300">
+                Produk Sehat
+        </a>
+    </div>
+</div>
+
+<div class="w-full flex justify-center items-center bg-white rounded">
+    <div class="relative w-[50%] h-[500px] bg-cover bg-no-repeat rounded-xl max-sm:w-[90%] shadow-2xl"
+        style="background-image: url('https://ppdb.smkwikrama.sch.id/assets/landing%20page/images/Gedung.jpg');">
+        <div class="absolute inset-0 flex flex-col justify-center items-start w-[80%] m-auto text-left backdrop-blur-sm h-fit rounded-md p-3">
+            <h6 class="text-white text-4xl font-bold m-5 max-sm:text-sm ">kategori</h6>
+            <h1 class="text-white text-xl font-light m-5 max-sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed debitis suscipit a assumenda nemo excepturi nobis, deserunt et itaque dolores?</h1>
+            <a href="" class="bg-white p-3 rounded m-5 md:text-sm max-sm:m-auto">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Trending Products -->
+
+    <div class="bg-white">
+        <div class="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
+          <div class="flex items-center justify-between px-4 sm:px-6 lg:px-0">
+            <h2 class="text-2xl font-bold tracking-tight text-gray-900">Trending products</h2>
+            <a href="#" class="hidden text-sm font-semibold text-blue-600 hover:text-cyan-500 sm:block">
+              Search more
+              <span aria-hidden="true"> &rarr;</span>
+            </a>
+          </div>
+      
+          <div class="relative mt-8">
+            <div class="relative -mb-6 w-full overflow-x-auto pb-6">
+              <ul role="list" class="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0">
+                <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                  <div class="group relative">
+                    <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+                      <img src="https://m.media-amazon.com/images/I/61bG3pY7k-L.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Prime drink
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-gray-900">Rp 5.000</p>
+                    </div>
+                  </div>
+      
+                  <h4 class="sr-only">Available colors</h4>
+                  <ul role="list" class="mt-auto flex items-center justify-center space-x-3 pt-6">
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #111827">
+                      <span class="sr-only">Black</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #fde68a">
+                      <span class="sr-only">Brass</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #e5e7eb">
+                      <span class="sr-only">Chrome</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                  <div class="group relative">
+                    <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+                      <img src="https://m.media-amazon.com/images/I/61bG3pY7k-L.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Prime drink
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-gray-900">Rp 5.000</p>
+                    </div>
+                  </div>
+      
+                  <h4 class="sr-only">Available colors</h4>
+                  <ul role="list" class="mt-auto flex items-center justify-center space-x-3 pt-6">
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #111827">
+                      <span class="sr-only">Black</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #fde68a">
+                      <span class="sr-only">Brass</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #e5e7eb">
+                      <span class="sr-only">Chrome</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                  <div class="group relative">
+                    <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+                      <img src="https://m.media-amazon.com/images/I/61bG3pY7k-L.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Prime drink
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-gray-900">Rp 5.000</p>
+                    </div>
+                  </div>
+      
+                  <h4 class="sr-only">Available colors</h4>
+                  <ul role="list" class="mt-auto flex items-center justify-center space-x-3 pt-6">
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #111827">
+                      <span class="sr-only">Black</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #fde68a">
+                      <span class="sr-only">Brass</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #e5e7eb">
+                      <span class="sr-only">Chrome</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="inline-flex w-64 flex-col text-center lg:w-auto">
+                  <div class="group relative">
+                    <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
+                      <img src="https://m.media-amazon.com/images/I/61bG3pY7k-L.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Prime drink
+                        </a>
+                      </h3>
+                      <p class="mt-1 text-gray-900">Rp 5.000</p>
+                    </div>
+                  </div>
+      
+                  <h4 class="sr-only">Available colors</h4>
+                  <ul role="list" class="mt-auto flex items-center justify-center space-x-3 pt-6">
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #111827">
+                      <span class="sr-only">Black</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #fde68a">
+                      <span class="sr-only">Brass</span>
+                    </li>
+                    <li class="h-4 w-4 rounded-full border border-black border-opacity-10" style="background-color: #e5e7eb">
+                      <span class="sr-only">Chrome</span>
+                    </li>
+                  </ul>
+                </li>
+      
+                <!-- More products... -->
+              </ul>
+            </div>
+          </div>
+      
+          <div class="mt-12 flex px-4 sm:hidden">
+            <a href="#" class="text-sm font-semibold text-blue-600 hover:text-cyan-500">
+              Search more
+              <span aria-hidden="true"> &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {{-- **** FOOTER **** --}}
     <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
@@ -418,12 +823,8 @@
         </div>
     </section>
 
-    <div class="tes-aja">
-        <p>tes pull request</p>
-    </div>
 
-    
-    
+   
     
     {{-- nur rizki selesain yang ini --}} 
 
